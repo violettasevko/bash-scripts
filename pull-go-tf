@@ -1,0 +1,6 @@
+#!/bin/bash
+cd ../terraform-vpc
+git pull
+terraform init
+terraform plan
+terraform apply auto-approve
