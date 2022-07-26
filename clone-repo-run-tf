@@ -1,0 +1,7 @@
+#!/bin/bash
+cd ..
+git clone https://github.com/violettasevko/terraform-vpc/modules/module-vpc
+cd terraform-vpc
+terraform init
+terraform plan
+terraform apply
