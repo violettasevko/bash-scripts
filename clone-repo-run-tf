@@ -4,4 +4,4 @@ git clone https://github.com/violettasevko/terraform-vpc
 cd terraform-vpc/module-vpc
 terraform init
 terraform plan
-terraform apply
+terraform apply auto-approve
