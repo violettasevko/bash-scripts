@@ -1,0 +1,12 @@
+#!/bin/bash
+cd ..
+rm -rf terraform-vpc
+git clone https://github.com/violettasevko/terraform-vpc/modules/module-vpc
+sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+sudo yum -y install terraform
+cp $(which terraform) ~/bin
+cd terraform-vpc
+terraform init
+terraform plan
+terraform apply
