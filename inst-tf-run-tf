@@ -7,4 +7,4 @@ cp $(which terraform) ~/bin
 cd terraform-vpc/module-vpc
 terraform init
 terraform plan
-terraform apply
+terraform apply -auto-approve
