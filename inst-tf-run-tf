@@ -7,4 +7,4 @@ cp $(which terraform) ~/bin
 cd terraform-vpc/module-vpc
 terraform init
 terraform plan
-terraform apply -auto-approve
+terraform apply -var="AWS_Region=us-east-2" -var="vpc_prefix=10.62"
