@@ -1,4 +1,3 @@
 #!/bin/bash
 mkdir ~/.ssh
-mkdir myproject
 git clone --bare myproject  ssh://user@server:/GitRepos/myproject.git
