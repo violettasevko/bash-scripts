@@ -1,3 +1,6 @@
 #!/bin/bash
 mkdir ~/.ssh
-git clone --bare myproject  ssh://user@server:/GitRepos/myproject.git
+cd ~/.ssh && ssh-keygen -t rsa -b 4096 -C "email@example.com"
+git clone <username>@<hostname>:<repository>.git
+#git clone --bare myproject  ssh://user@server:/GitRepos/myproject.git
+#https://devconnected.com/how-to-clone-a-git-repository/
