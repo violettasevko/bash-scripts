@@ -1,5 +1,4 @@
 #!/bin/bash
-cd ../terraform-vpc/
 git pull
 terraform init
 terraform plan
